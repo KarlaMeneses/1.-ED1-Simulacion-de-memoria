@@ -7,3 +7,4 @@ NOTA:
 Para realizar los commit se debe crear un repositorio por clase
 y poner junto al .gitignore todo el proyecto creado y las subcarpetas...
 
+Mirar este video tutorial para el uso de GitHub --> https://youtu.be/JSswgwPbjNs
