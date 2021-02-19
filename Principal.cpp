@@ -1,0 +1,36 @@
+#pragma hdrstop
+#pragma argsused
+
+#ifdef _WIN32
+#include <tchar.h>
+#else
+  typedef char _TCHAR;
+  #define _tmain main
+#endif
+
+#include <stdio.h>
+//added
+#include <iostream>
+#include "Umemoria.h"
+
+///////#include<string>  ----
+using namespace std;
+
+//string obtener_id2(string cadena_id,int &a);
+
+int _tmain(int argc, _TCHAR* argv[])
+{      /////////
+	CSMemoria* memoria = new CSMemoria;
+	cout<<"Memoria creada con exito!\n";
+	int x=memoria->new_espacio("  h   ,ola  ,  mundo,como ,TODOS  ");
+	int y=memoria->new_espacio("   UAGRM , dinos ");
+	memoria->new_espacio("hola, como , estan ,????");
+	memoria->poner_dato(x,"   ->mundo   ",10);   ///
+	memoria->poner_dato(y,"->UAGRM    ",2000); ////
+	memoria->mostrar_memoria();
+	int a=0;
+	//cout<<obtener_id2("hola como estan",a);
+	system("pause");
+	return 0;
+}
+
