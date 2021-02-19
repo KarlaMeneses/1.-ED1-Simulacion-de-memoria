@@ -1,1 +1,5 @@
 esta es una prueba para verificar ...
+Para subir mis codigos a la nube lo hare con la ayuda de github por lo cual tengo que seguir los siguientes pasos: 
+1. tener instalado GIT --> https://git-scm.com/downloads
+2. Despues de tener Git proseguimos a instalar GITHUB --> https://desktop.github.com/
+
