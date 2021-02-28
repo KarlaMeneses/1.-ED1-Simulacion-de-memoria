@@ -149,7 +149,8 @@ int CSMemoria::espacio_disponible(){
 }
 
 int CSMemoria::espacio_ocupado(){ ///La inversa
-	int c =(MAX+1) - espacio_disponible();
+	//int c =(MAX+1) - espacio_disponible();
+	int c =MAX - espacio_disponible();//last modified
 	return c;
 }
 
