@@ -120,7 +120,8 @@ void CSMemoria::poner_dato(int dir,string cadena_id,int valor ){
 int CSMemoria::obtener_dato(int dir,string cadena_id){
 	int z=dir;
 	bool ex=false;
-	Eliminar_flecha(cadena_id);
+	//Eliminar_flecha(cadena_id);
+	cadena_id=Eliminar_flecha(cadena_id); //last modified
 	while(z!=NULO){
 		if (MEM[z].Id == cadena_id){
 			return MEM[z].Dato;
