@@ -72,33 +72,6 @@ string Eliminar_flecha(string cadena_id){ //Entra si tiene una flecha, ya verifi
 	return cadena_id;
 }
 
-//-----------Funciones y procesos auxiliares---------------
-//Mayuscula
-void ConverMay(string &cad){
-	int n=cad.length();
-	for (int i = 0; i < n; i++) {
-		cad[i]=toupper(cad[i]);
-	}
-}
-//Contador de comillas
-int contdordec(string pal){
-	int n=pal.length();
-	int j=1;
-	for (int i = 0; i < n; i++) {
-		if (pal[i]==',') {
-			j++;
-		}
-	}
-	return j;
-}
-//almacenador de palbra nueva
-string palnew(string cad){
-int i=cad.rfind('>');
-string cadnueva="";
-cadnueva=cad.substr(i+1);cad;
-return cadnueva;
-}
-
 /************METODOS DE LA CLASE MEMORIA***************************************/
 CSMemoria::CSMemoria(){
 	for (int i = 0; i < MAX; i++) {
@@ -224,61 +197,12 @@ void CSMemoria::mostrar_memoria(){
 		<< "+" << endl;
 	cout.fill(' ');
 	//setw() = espacios en blancos hasta cierto punto
-	cout<<"Libre: "<<Libre<<endl;
 }
 
 bool CSMemoria::lleno() { // me dice si consumio toda la memoria de libre
-	return espacio_disponible() == 0; // max=10   0=false; 1=true;
+	return espacio_disponible() == MAX; // max=10
 }
 
 bool CSMemoria::vacio() { // Me indica si esta limpio la memoria
-	return espacio_disponible() == MAX;
+	return espacio_disponible() == 0;
 }
-
-int CSMemoria::Obtener_Link(int dir){
-   return MEM[dir].Link;
-}
-
-bool CSMemoria::Estado_Dir(int dir){
-	 if (dir>=0 && dir<MAX){
-		bool sw = false;
-		int x = Libre;
-		while (x!=-1 && !sw){
-		   if(x==dir){
-			  return true; //si esta libre
-		   }
-		   x=MEM[x].Link;
-		}
-		return false; //esta ocupado
-	 }else{
-		return false;
-	 }
-}
-
-void CSMemoria::NuevoMostrar(char z){
-	if (z=='o'||z=='O') {
-		cout << "OCUPADO VERSION" << endl;
-		cout << "------------------------------------" << endl;
-		cout << "        Dato   Link    " << endl;
-		int y;
-		for (int i = 0; i < MAX; i++) {
-		   if(!Estado_Dir(i)){
-			   cout<<"   "<<i<<"     "<<" [ "<<MEM[i].Dato<<"  ,  "<<MEM[i].Link<<" ]  "<<endl;
-		   }
-		}
-
-	}else if (z=='l'||z=='L') {
-		int x = Libre;
-		cout << "LIBRE VERSION" << endl;
-		cout << "------------------------------------" << endl;
-		cout << "        Dato   Link    " << endl;
-		while (x!=-1){
-		   cout<<"   "<<x<<"     "<<" [ "<<MEM[x].Dato<<"  ,  "<<MEM[x].Link<<" ]  "<<endl;
-		   x=MEM[x].Link;
-		}
-		cout<<endl<<   "Libre: "<<Libre<<endl;
-	}else{
-	  cout<<"Error al insertar "<<endl;
-	}
-}
-

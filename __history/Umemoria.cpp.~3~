@@ -72,33 +72,6 @@ string Eliminar_flecha(string cadena_id){ //Entra si tiene una flecha, ya verifi
 	return cadena_id;
 }
 
-//-----------Funciones y procesos auxiliares---------------
-//Mayuscula
-void ConverMay(string &cad){
-	int n=cad.length();
-	for (int i = 0; i < n; i++) {
-		cad[i]=toupper(cad[i]);
-	}
-}
-//Contador de comillas
-int contdordec(string pal){
-	int n=pal.length();
-	int j=1;
-	for (int i = 0; i < n; i++) {
-		if (pal[i]==',') {
-			j++;
-		}
-	}
-	return j;
-}
-//almacenador de palbra nueva
-string palnew(string cad){
-int i=cad.rfind('>');
-string cadnueva="";
-cadnueva=cad.substr(i+1);cad;
-return cadnueva;
-}
-
 /************METODOS DE LA CLASE MEMORIA***************************************/
 CSMemoria::CSMemoria(){
 	for (int i = 0; i < MAX; i++) {
