@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/09 18:07:03.000.843,=C:\Users\Karla\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/09/09 18:07:03.000.966,=C:\Users\Karla\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/01/08 09:02:25.000.846,=C:\Users\Karla\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/01/08 09:02:26.000.006,=C:\Users\Karla\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/01/08 09:27:02.000.877,=C:\Users\Karla\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/01/08 09:27:03.000.009,=C:\Users\Karla\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2021/01/08 09:27:55.000.534,C:\Users\Karla\Documents\Embarcadero\Studio\Projects\File1.cpp=C:\Users\Karla\Desktop\Universidad\ING. SISTEMAS\4 SEMESTRE\ESTRUCTURAS DE DATOS 1\2-2020\Unidad 1\Practicas Modelo de examen\Official, funciona bien\Principal.cpp</Transaction>
+    <Transaction>2021/01/08 09:28:20.000.105,C:\Users\Karla\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\Karla\Desktop\Universidad\ING. SISTEMAS\4 SEMESTRE\ESTRUCTURAS DE DATOS 1\2-2020\Unidad 1\Practicas Modelo de examen\Official, funciona bien\Pmemoria.h</Transaction>
+    <Transaction>2021/01/08 09:28:52.000.147,C:\Users\Karla\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\Karla\Desktop\Universidad\ING. SISTEMAS\4 SEMESTRE\ESTRUCTURAS DE DATOS 1\2-2020\Unidad 1\Practicas Modelo de examen\Official, funciona bien\Practicamemoria.cbproj</Transaction>
+    <Transaction>2021/01/08 09:29:12.000.767,=C:\Users\Karla\Desktop\Universidad\ING. SISTEMAS\4 SEMESTRE\ESTRUCTURAS DE DATOS 1\2-2020\Unidad 1\Practicas Modelo de examen\Official, funciona bien\Unit1.cpp</Transaction>
+    <Transaction>2021/01/08 09:29:31.000.735,C:\Users\Karla\Desktop\Universidad\ING. SISTEMAS\4 SEMESTRE\ESTRUCTURAS DE DATOS 1\2-2020\Unidad 1\Practicas Modelo de examen\Official, funciona bien\Unit1.cpp=C:\Users\Karla\Desktop\Universidad\ING. SISTEMAS\4 SEMESTRE\ESTRUCTURAS DE DATOS 1\2-2020\Unidad 1\Practicas Modelo de examen\Official, funciona bien\Umemoria.cpp</Transaction>
+    <Transaction>2021/01/08 09:29:31.000.735,C:\Users\Karla\Desktop\Universidad\ING. SISTEMAS\4 SEMESTRE\ESTRUCTURAS DE DATOS 1\2-2020\Unidad 1\Practicas Modelo de examen\Official, funciona bien\Unit1.h=C:\Users\Karla\Desktop\Universidad\ING. SISTEMAS\4 SEMESTRE\ESTRUCTURAS DE DATOS 1\2-2020\Unidad 1\Practicas Modelo de examen\Official, funciona bien\Umemoria.h</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Pmemoria.h"/>
+    <File Path="Principal.cpp"/>
+    <File Path="Umemoria.cpp"/>
+    <File Path="Umemoria.cpp"/>
+    <File Path="Umemoria.h"/>
+  </ProjectSortOrder>
+</BorlandProject>

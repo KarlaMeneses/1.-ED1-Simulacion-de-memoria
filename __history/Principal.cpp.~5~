@@ -20,16 +20,16 @@ using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {      /////////
-
+/*
 	CSMemoria* memoria = new CSMemoria;
 	cout<<"Memoria creada con exito!\n";
-	int x=memoria->new_espacio("  h   ,ola  ,  mundo,como ,TODOS  ");
-   //	int y=memoria->new_espacio("   UAGRM , dinos ");
-	//memoria->new_espacio("hola, como , estan ,????");
-	memoria->poner_dato(x,"   ->como   ",1000);   ///
-	//memoria->poner_dato(y,"->UAGRM    ",2000); ////
+	//int x=memoria->new_espacio("  h   ,ola  ,  mundo,como ,TODOS  ");
+	int y=memoria->new_espacio("   UAGRM , dinos ");
+	memoria->new_espacio("hola, como , estan ,????");
+	memoria->poner_dato(y,"   ->como   ",10);   ///
+	memoria->poner_dato(y,"->UAGRM    ",2000); ////
 	memoria->mostrar_memoria();
-	 /*
+
 	if (memoria->lleno()==1) cout<<"La memoria esta llena" <<endl;//0=true
 	else cout<<"La memoria NO esta llena" <<endl;//1=false
 	if (memoria->vacio()==1) cout<<"La memoria esta vacia" <<endl;//0=true
@@ -39,7 +39,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	else cout<<"La direccion NO se encuentra disponible" <<endl;//1=false
 	cout<<"espacio disponible "<<memoria->espacio_disponible()<<endl;
 	cout<<"espacio ocupado "<<memoria->espacio_ocupado()<<endl;    */
-/*	string cad= ">hola";
+	string cad= ">hola";
 	int i=cad.rfind('>');//encuentra el char de la derecha y devuelve la posicion
 	//string cad[3]={'1','2','3'};
 
@@ -51,7 +51,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout<<"sizeof: "<<arrSize<<endl;
 	cout<<"Prueba: "<<i<<endl;
 	//memoria->NuevoMostrar('o'); //ocupado
-   //	memoria->NuevoMostrar('L'); //libre    */
+   //	memoria->NuevoMostrar('L'); //libre
 	system("pause");
 	return 0;
 }
